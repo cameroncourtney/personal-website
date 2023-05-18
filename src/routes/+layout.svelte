@@ -13,7 +13,7 @@
 	function sectionScroll(section: string) {
 		const ref = document.getElementById(section);
 		console.log(ref);
-		ref?.scrollIntoView({behavior: 'smooth'});
+		ref?.scrollIntoView({ behavior: 'smooth' });
 	}
 </script>
 
@@ -26,16 +26,24 @@
 		<svelte:fragment>
 			<!-- Header Contents -->
 			<div id="navContainer">
-				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll("about")} >
+				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll('about')}>
 					<h1 class="h3" id="header">About</h1>
 				</button>
-				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll("experience")}>
+				<button
+					type="button"
+					class="btn !bg-transparent"
+					on:click={() => sectionScroll('experience')}
+				>
 					<h1 class="h3" id="header">Experience</h1>
 				</button>
-				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll("projects")} >
+				<button
+					type="button"
+					class="btn !bg-transparent"
+					on:click={() => sectionScroll('projects')}
+				>
 					<h1 class="h3" id="header">Projects</h1>
 				</button>
-				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll("contact")}>
+				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll('contact')}>
 					<h1 class="h3" id="header">Contact</h1>
 				</button>
 			</div>

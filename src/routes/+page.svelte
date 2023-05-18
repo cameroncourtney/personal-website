@@ -7,9 +7,13 @@
 </div> -->
 <div id="layout">
 	<div id="about" class="card p-4">About Me</div>
-	<div id ="experience" class="card p-4 bg-gradient-to-br variant-gradient-tertiary-secondary">Experience</div>
+	<div id="experience" class="card p-4 bg-gradient-to-br variant-gradient-tertiary-secondary">
+		Experience
+	</div>
 	<div class="card p-4 bg-gradient-to-br variant-gradient-tertiary-primary">Contact</div>
-	<div id="projects" class="card p-4 bg-gradient-to-br variant-gradient-secondary-primary">Projects</div>
+	<div id="projects" class="card p-4 bg-gradient-to-br variant-gradient-secondary-primary">
+		Projects
+	</div>
 	<div class="card p-4 bg-gradient-to-br variant-gradient-secondary-tertiary">Projects</div>
 	<div class="card p-4 bg-gradient-to-br variant-gradient-primary-secondary">Contact</div>
 	<div class="card p-4 bg-gradient-to-br variant-gradient-primary-tertiary">Contact</div>
