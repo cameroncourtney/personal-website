@@ -9,31 +9,42 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
-	import { Avatar } from '@skeletonlabs/skeleton';
 </script>
 
 <AppShell>
-	<AppBar gap="gap-8" slotDefault="place-content-end" slotTrail="place-content-end">
+	<AppBar id="shell" gap="gap-8">
 		<svelte:fragment slot="lead">
-			(icon)
-			<!-- <img src="/favicon.png" alt="logo"/> -->
+			<div />
 		</svelte:fragment>
-		<div id="headers">
-			<div>About</div>
-			<div>Experience</div>
-			<div>Projects</div>
-			<div>Contact</div>
-		</div>
-		<svelte:fragment slot="trail"><LightSwitch /></svelte:fragment>
+		<svelte:fragment>
+			<!-- Header Contents -->
+			<div id="headerContainer">
+				<button type="button" class="btn !bg-transparent">
+					<h1 class="h3" id="header">About</h1>
+				</button>
+				<button type="button" class="btn !bg-transparent">
+					<h1 class="h3" id="header">Experience</h1>
+				</button>
+				<button type="button" class="btn !bg-transparent">
+					<h1 class="h3" id="header">Projects</h1>
+				</button>
+				<button type="button" class="btn !bg-transparent">
+					<h1 class="h3" id="header">Contact</h1>
+				</button>
+			</div>
+		</svelte:fragment>
+		<svelte:fragment slot="trail"
+			><LightSwitch class="white" width="w-14" height="h-7" /></svelte:fragment
+		>
 	</AppBar>
 	<slot />
 </AppShell>
 
 <style>
-	#headers {
+	#headerContainer {
 		display: flex;
 		flex-direction: row;
-		gap: 10%;
 		justify-content: center;
+		font-size: 1rem;
 	}
 </style>
