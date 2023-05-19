@@ -8,8 +8,8 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import Header from '../components/Header.svelte';
-	import Footer from '../components/Footer.svelte';
+	import Header from '../lib/components/Header.svelte';
+	import Footer from '../lib/components/Footer.svelte';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 
 	function sectionScroll(section: string) {

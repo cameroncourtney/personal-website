@@ -1,13 +1,14 @@
+<!-- Footer component that links LinkedIn, Github, and my email. Also contains name at bottom. -->
 <div id="footer">
 	<div id="iconContainer">
 		<a href="https://linkedin.com/in/cameron-courtney">
-			<i id="icon" class="fa-brands fa-linkedin text-4xl" />
+			<i id="linkedIn" class="fa-brands fa-linkedin text-4xl" />
 		</a>
 		<a href="mailto: cameroncourtney@utexas.edu">
-			<i id="icon" class="fa-regular fa-envelope text-4xl" />
+			<i id="email" class="fa-regular fa-envelope text-4xl" />
 		</a>
 		<a href="https://github.com/cameroncourtney">
-			<i id="icon" class="fa-brands fa-github text-4xl" />
+			<i id="github" class="fa-brands fa-github text-4xl" />
 		</a>
 	</div>
 	<div class="h5">Cameron Courtney © 2023</div>
@@ -22,7 +23,9 @@
 		align-items: center;
 	}
 
-	#icon {
+	#github,
+	#email,
+	#linkedIn {
 		cursor: pointer;
 	}
 
@@ -33,6 +36,17 @@
 		flex-direction: column;
 		padding: 1rem;
 		gap: 0.5rem;
-		background-color: var(--color-primary-500);
+	}
+
+	#linkedIn:hover {
+		color: rgb(var(--color-primary-500));
+	}
+
+	#email:hover {
+		color: rgb(var(--color-secondary-500));
+	}
+
+	#github:hover {
+		color: rgb(var(--color-tertiary-500));
 	}
 </style>
