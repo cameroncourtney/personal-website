@@ -19,16 +19,17 @@
 
 <!-- Main wrapper component around application -->
 <AppShell>
-	<AppBar gap="gap-8" class="sticky top-0">
-		<svelte:fragment slot="lead">
-			<div />
-		</svelte:fragment>
-		<svelte:fragment>
 			<!-- Header Contents -->
 			<div id="navContainer">
-				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll('about')}>
-					<h1 class="h3" id="header">About</h1>
-				</button>
+				<!-- <button type="button" class="btn !bg-transparent" on:click={() => sectionScroll('about')}> -->
+					<h1 on:click={() => sectionScroll('about')} class="h3" id="header">About</h1>
+					<h1 on:click={() => sectionScroll('experience')} class="h3" id="header">Experience</h1>
+					<h1 on:click={() => sectionScroll('projects')} class="h3" id="header">Projects</h1>
+					<h1 on:click={() => sectionScroll('contact')} class="h3" id="header">Contact</h1>
+					<div>
+						<LightSwitch class="white" width="w-14" height="h-7" />
+					</div>
+				<!-- </button>
 				<button
 					type="button"
 					class="btn !bg-transparent"
@@ -45,14 +46,28 @@
 				</button>
 				<button type="button" class="btn !bg-transparent" on:click={() => sectionScroll('contact')}>
 					<h1 class="h3" id="header">Contact</h1>
-				</button>
+				</button> -->
 			</div>
-		</svelte:fragment>
-		<svelte:fragment slot="trail">
+		<!-- <svelte:fragment slot="trail">
 			<LightSwitch class="white" width="w-14" height="h-7" />
-		</svelte:fragment>
-	</AppBar>
+		</svelte:fragment> -->
 	<slot />
+	<svelte:fragment slot="pageFooter">
+		<div id="footer">
+			<div id="iconContainer">
+				<a href="https://linkedin.com/in/cameron-courtney">
+					<i id="icon" class="fa-brands fa-linkedin text-4xl"></i>
+				</a>
+				<a href = "mailto: cameroncourtney@utexas.edu">
+					<i id="icon" class="fa-regular fa-envelope text-4xl"></i>
+				</a>
+				<a href="https://github.com/cameroncourtney">
+					<i id="icon" class="fa-brands fa-github text-4xl"></i>
+				</a>
+			</div>
+			<div class="h5">Cameron Courtney © 2023</div>
+		</div>
+	</svelte:fragment>
 </AppShell>
 
 <style>
@@ -61,6 +76,37 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		font-size: 1rem;
+		gap: 1rem;
+		position: sticky;
+		top: 0;
+		padding: 1rem;
+		height: max-content;
+		/* font-size: 1rem; */
+	}
+
+	#header {
+		cursor: pointer;
+	}
+
+	#iconContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 1.5rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#icon {
+		cursor: pointer;
+	}
+
+	#footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 1rem;
+		gap: 0.5rem;
+		background-color: var(--color-primary-500);
 	}
 </style>

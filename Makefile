@@ -17,3 +17,7 @@ build:
 # Preview production build
 preview:
 	npm run preview
+
+# Run application and expost host.
+start-host:
+	npm run dev -- --host
