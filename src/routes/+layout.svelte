@@ -25,34 +25,12 @@
 	<svelte:fragment slot="pageHeader">
 		<Header />
 	</svelte:fragment>
-	<!-- <slot /> -->
+	<slot />
+	<!-- <a href="../CameronCourtneyResume.pdf" target="_blank" class="pdf-button">
+		Open PDF
+	  </a> -->
 	<!-- Footer Contents -->
 	<svelte:fragment slot="pageFooter">
 		<Footer />
 	</svelte:fragment>
 </AppShell>
-
-<style>
-	/* Formats the buttons/sections of the site as a flex-box. */
-	/* #navContainer {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		position: sticky;
-		top: 0;
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
-	}
-
-	#headContainer {
-		display: flex;
-	}
-
-	#header {
-		cursor: pointer;
-		display: flex;
-		padding-left: 1rem;
-		padding-right: 1rem;
-	} */
-</style>
