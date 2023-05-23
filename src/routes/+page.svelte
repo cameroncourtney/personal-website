@@ -1,19 +1,17 @@
 <script>
-	// #495a8f
+    // import Typewriter from 'svelte-typewriter'
 </script>
 
+
 <div id="mainContainer">
-	<section class="bg-surface-500" id="aboutContainer">
-		<div>
-			Intro
-		</div>
-		<div>
-			Intro 2 
+	<section id="aboutContainer">
+		<div class="text-6xl">
+			Cameron Courtney
 		</div>
 	</section>
-	<!-- <section id="aboutContainer">
-		<div id="aboutCard" class="card p-4 bg-surface-100-800-token">About Me</div>
-	</section> -->
+	<section class="variant-filled-primary" id="aboutContainer">
+		<div class="text-7xl">Cameron Courtney 2</div>
+	</section>
 </div>
 <!-- <div id="layout">
 	<div id="about" class="card p-4">About Me</div>
@@ -42,27 +40,38 @@
 		min-height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 		gap: 0.5rem; 
+		text-align: center;
 	}
 
-	#aboutContainer {
-		/* Height is viewport minus height of the header and footer. */
-		height: calc(100vh - 56px - 104px);
-		width: 100%;
-		flex-direction: column;
+	/* #intro {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	} */
+
+	#aboutContainer {
+		/* Height is viewport minus height of the header and footer. 
+		Header is 56px, footer is 104px. */
+		min-height: calc(100vh - 56px);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 		/* margin-left: 1rem;
 		margin-right: 1rem;
 		margin-top: 1rem; */
 		justify-content: center;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	#aboutCard {
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 	}
 
 	/* #layout {

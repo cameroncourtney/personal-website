@@ -1,5 +1,5 @@
 <!-- Footer component that links LinkedIn, Github, and my email. Also contains name at bottom. -->
-<div id="footer">
+<div id="footer" class="w-full">
 	<div id="iconContainer">
 		<a href="https://linkedin.com/in/cameron-courtney">
 			<i id="linkedIn" class="fa-brands fa-linkedin text-4xl" />
@@ -11,7 +11,7 @@
 			<i id="github" class="fa-brands fa-github text-4xl" />
 		</a>
 	</div>
-	<div class="h5">Cameron Courtney © 2023</div>
+	<div class="h-5">Cameron Courtney © 2023</div>
 </div>
 
 <style>

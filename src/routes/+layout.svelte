@@ -11,7 +11,6 @@
 	import Header from '../lib/components/Header.svelte';
 	import Footer from '../lib/components/Footer.svelte';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
-
 	function sectionScroll(section: string) {
 		const ref = document.getElementById(section);
 		console.log(ref);
@@ -20,17 +19,23 @@
 </script>
 
 <!-- Main wrapper component around application -->
-<AppShell>
+<AppShell regionPage="overflow-y-scroll" slotFooter="bg-black p-4">
 	<!-- Header Contents -->
-	<svelte:fragment slot="pageHeader">
-		<Header />
+	<svelte:fragment slot="header">
+		<Header/>
 	</svelte:fragment>
-	<slot />
+
+	<slot/>
 	<!-- <a href="../CameronCourtneyResume.pdf" target="_blank" class="pdf-button">
 		Open PDF
-	  </a> -->
+	</a> -->
 	<!-- Footer Contents -->
 	<svelte:fragment slot="pageFooter">
 		<Footer />
 	</svelte:fragment>
 </AppShell>
+
+
+<style>
+
+</style>
