@@ -10,7 +10,13 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Header from '../lib/components/Header.svelte';
 	import Footer from '../lib/components/Footer.svelte';
-	import { LightSwitch } from '@skeletonlabs/skeleton';
+	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+
+
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+			
+			
 	function sectionScroll(section: string) {
 		const ref = document.getElementById(section);
 		console.log(ref);
@@ -19,7 +25,7 @@
 </script>
 
 <!-- Main wrapper component around application -->
-<AppShell regionPage="overflow-y-scroll" slotFooter="bg-black p-4">
+<AppShell class="scroll-smooth" regionPage="overflow-y-auto" slotFooter="bg-black p-4">
 	<!-- Header Contents -->
 	<svelte:fragment slot="header">
 		<Header/>
