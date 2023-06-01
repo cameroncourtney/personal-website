@@ -1,6 +1,7 @@
 <script lang="ts">
-	import About from "$lib/components/sections/About.svelte";
+	import Footer from '../lib/components/Footer.svelte';
 	import Home from "$lib/components/sections/Home.svelte";
+	import About from '$lib/components/sections/About.svelte';
 
 	function sectionScroll(section: string) {
 		const ref = document.getElementById(section);
@@ -13,10 +14,10 @@
 <div id="mainContainer" class="overflow-y-auto scroll-smooth">
 	<Home on:aboutScroll={() => sectionScroll("aboutSection")}></Home>
 	<About></About>
-	<!-- <section class="variant-filled-primary" id="homeContainer">
-		<div class="text-7xl">Cameron Courtney 2</div>
-	</section> -->
+	<About></About>
 </div>
+
+<Footer />
 <!-- <div id="layout">
 	<div id="about" class="card p-4">About Me</div>
 	<div id="experience" class="card p-4 bg-gradient-to-br variant-gradient-tertiary-secondary">
@@ -40,8 +41,6 @@
 <style>
 
 	#mainContainer {
-		width: 100%;
-		min-height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

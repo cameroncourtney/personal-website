@@ -10,6 +10,7 @@
         console.log("hello clicked");
         dispatch('aboutScroll');
     }
+
 </script>
 
 <div id="homeSection">
@@ -25,10 +26,10 @@
             <Links></Links>
         </div>
     </section>
-
-    <!-- Footer to navigate to about page below. -->
     <div id="aboutButton">
-        <div class="text-2xl font-medium">About Me</div>
+        <div class="text-2xl">
+            About Me
+        </div>
         <button on:click={aboutClick} type="button" class="btn-icon btn-lg variant-filled text-2xl">
             <i class="fa-solid fa-arrow-down"></i>
         </button>
@@ -43,19 +44,28 @@
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
-		min-height: 90%
+		min-height: 90%;
+        box-sizing: border-box;
 	}
+
+    #homeSection {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 
     #introContainer {
 		/* Height is viewport minus height of the header and footer. 
 		Header is 56px, footer is 104px. */
-		min-height: calc(100vh - 56px - 147px);
+		height: 100%;
 		width: 100%;
+        box-sizing: border-box;
 		display: flex;
-		flex-direction: column;
+        flex-flow: column wrap;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
 	}
 
     #aboutButton {
@@ -66,5 +76,6 @@
 		padding: 2rem;
 		gap: .5rem;
         width: 100%;
+        box-sizing: border-box;
 	}
 </style>

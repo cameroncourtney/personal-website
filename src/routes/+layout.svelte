@@ -9,7 +9,6 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Header from '../lib/components/Header.svelte';
-	import Footer from '../lib/components/Footer.svelte';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 
 
@@ -25,23 +24,16 @@
 </script>
 
 <!-- Main wrapper component around application -->
-<AppShell class="scroll-smooth" regionPage="overflow-y-auto" slotFooter="bg-black p-4">
+<AppShell class="scroll-smooth" slotFooter="bg-black p-4">
 	<!-- Header Contents -->
 	<svelte:fragment slot="header">
 		<Header/>
 	</svelte:fragment>
-
 	<slot/>
 	<!-- <a href="../CameronCourtneyResume.pdf" target="_blank" class="pdf-button">
 		Open PDF
 	</a> -->
-	<!-- Footer Contents -->
-	<svelte:fragment slot="pageFooter">
-		<Footer />
-	</svelte:fragment>
 </AppShell>
-
-
 <style>
 
 </style>
