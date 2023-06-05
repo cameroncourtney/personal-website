@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Links from "./Links.svelte";
+	import Links from './Links.svelte';
 	export let links: boolean;
 </script>
 
@@ -8,7 +8,7 @@
 	<div id="footer" class="w-full">
 		{#if links}
 			<div id="iconContainer">
-				<Links></Links>
+				<Links />
 			</div>
 		{/if}
 		<div class="h-5">Cameron Courtney © 2023</div>
@@ -35,6 +35,6 @@
 
 	#footerWrapper {
 		position: absolute;
-        bottom: 0;
+		bottom: 0;
 	}
 </style>

@@ -1,11 +1,10 @@
 <script lang="ts">
 	import Footer from '../lib/components/Footer.svelte';
-	import Home from "$lib/components/sections/Home.svelte";
+	import Home from '$lib/components/sections/Home.svelte';
 </script>
 
-
 <div id="mainContainer" class="overflow-y-auto scroll-smooth">
-	<Home></Home>
+	<Home />
 </div>
 
 <!-- <Footer /> -->

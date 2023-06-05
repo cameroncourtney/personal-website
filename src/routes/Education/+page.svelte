@@ -1,9 +1,9 @@
 <script>
-	import Education from "$lib/components/sections/Education.svelte";
+	import Education from '$lib/components/sections/Education.svelte';
 </script>
 
 <div id="aboutPage">
-    <Education></Education>
+	<Education />
 </div>
 
 <style>

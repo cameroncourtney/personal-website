@@ -11,11 +11,9 @@
 	import Header from '../lib/components/Header.svelte';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 
-
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
-			
-			
+
 	function sectionScroll(section: string) {
 		const ref = document.getElementById(section);
 		console.log(ref);
@@ -27,13 +25,13 @@
 <AppShell class="scroll-smooth" slotFooter="bg-black p-4">
 	<!-- Header Contents -->
 	<svelte:fragment slot="header">
-		<Header/>
+		<Header />
 	</svelte:fragment>
-	<slot/>
+	<slot />
 	<!-- <a href="../CameronCourtneyResume.pdf" target="_blank" class="pdf-button">
 		Open PDF
 	</a> -->
 </AppShell>
-<style>
 
+<style>
 </style>
