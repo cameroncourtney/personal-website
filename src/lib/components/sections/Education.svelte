@@ -25,6 +25,9 @@
                     Certificate in Applied Statistical Modeling
                 </a>
              </p>
+             <p>
+                COURSEWORK
+             </p>
             <p>
                 My interests in the field include Software Engineering, Web Development, and Machine Learning.
             </p>
