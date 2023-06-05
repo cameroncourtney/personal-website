@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from "../Footer.svelte";
     import LonghornGif from "../LonghornGif.svelte";
 </script>
 
@@ -6,37 +7,41 @@
     <div id="aboutCard" class="card p-8">
         <div id="cardHeader">
             <div class="text-5xl">
-                About
+                Education
             </div>
             <hr id="divider" class="!border-t-4" />
         </div>
         <div id="cardContent" class="text-2xl">
             <p class="cardSentence">
-                I am a graduate of the
                 <span class="underline" id="longhorn">
                     <LonghornGif></LonghornGif>
-                </span>with a degree in Computer Science and 
-                a Certificate in Applied Statisical Modeling. 
+                </span> 
             </p>
-            <p>
-                I have experience in full-stack, web, and mobile development. I also have taken several courses in the field of Data Science.
+            <p class="italic">
+               Bachelor of Science and Arts, Computer Science
             </p>
+            <p class="italic">
+                <a href="https://stat.utexas.edu/academics/certificate-applied-statistical-modeling">
+                    Certificate in Applied Statistical Modeling
+                </a>
+             </p>
             <p>
                 My interests in the field include Software Engineering, Web Development, and Machine Learning.
             </p>
         </div>
     </div>
 </div>
+<Footer links={true}></Footer>
 
 
 <style>
     #aboutSection {
 		/* Height is viewport minus height of the header and footer. 
 		Header is 56px, footer is 104px. */
-        height: inherit;
+        height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		flex-wrap: wrap;
 	}
@@ -50,8 +55,7 @@
         gap: 2rem;
         padding: 2rem;
         overflow: auto;
-        margin: 4rem;
-        min-height: 50%;
+        margin: 2rem;
 	}
 
     #cardHeader {
@@ -67,7 +71,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         padding-left: 2rem;
         padding-right: 2rem;

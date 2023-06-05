@@ -11,7 +11,7 @@ const popupClick: PopupSettings = {
 
 <span class="longhorn text-lg object-contain">
     <span class="[&>*]:pointer-events-none" use:popup={popupClick}>
-        <span class="text-2xl">University of Texas at Austin</span>
+        <span class="text-3xl">University of Texas at Austin</span>
         <span class="text-lg w-3/5">
             <div class="card p-4 w-72 variant-filled-tertiary" data-popup="popupClick">
                 <span class="longhornGif">

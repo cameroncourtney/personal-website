@@ -1,16 +1,6 @@
 <script lang="ts">
 	import Links from "$lib/components/Links.svelte";
-	import { createEventDispatcher } from 'svelte';
-	const dispatch = createEventDispatcher();
-    
-    /**
-     * Emit an event when the about button is clicked.
-     */
-    function aboutClick() {
-        console.log("hello clicked");
-        dispatch('aboutScroll');
-    }
-
+	import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <div id="homeSection">
@@ -24,17 +14,14 @@
                 Software Engineer
             </div>
             <Links></Links>
+            <a href="../CameronCourtneyResume.pdf" type="button" class="btn variant-soft-surface text-xl">
+                <span><i class="fa-solid fa-user"></i></span>
+                <span>Resume</span>
+            </a>
         </div>
     </section>
-    <div id="aboutButton">
-        <div class="text-2xl">
-            About Me
-        </div>
-        <button on:click={aboutClick} type="button" class="btn-icon btn-lg variant-filled text-2xl">
-            <i class="fa-solid fa-arrow-down"></i>
-        </button>
-    </div>
 </div>
+<Footer links={false}></Footer>
 
 <style>
 	#intro {
@@ -57,8 +44,6 @@
     }
 
     #introContainer {
-		/* Height is viewport minus height of the header and footer. 
-		Header is 56px, footer is 104px. */
 		height: 100%;
 		width: 100%;
         box-sizing: border-box;
@@ -68,14 +53,8 @@
 		align-items: center;
 	}
 
-    #aboutButton {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 2rem;
-		gap: .5rem;
-        width: 100%;
-        box-sizing: border-box;
-	}
+    #footer {
+        position: absolute;
+        bottom: 0;
+    }
 </style>

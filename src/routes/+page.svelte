@@ -1,23 +1,14 @@
 <script lang="ts">
 	import Footer from '../lib/components/Footer.svelte';
 	import Home from "$lib/components/sections/Home.svelte";
-	import About from '$lib/components/sections/About.svelte';
-
-	function sectionScroll(section: string) {
-		const ref = document.getElementById(section);
-		console.log(ref);
-		ref?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-	}
 </script>
 
 
 <div id="mainContainer" class="overflow-y-auto scroll-smooth">
-	<Home on:aboutScroll={() => sectionScroll("aboutSection")}></Home>
-	<About></About>
-	<About></About>
+	<Home></Home>
 </div>
 
-<Footer />
+<!-- <Footer /> -->
 <!-- <div id="layout">
 	<div id="about" class="card p-4">About Me</div>
 	<div id="experience" class="card p-4 bg-gradient-to-br variant-gradient-tertiary-secondary">
@@ -39,7 +30,6 @@
 </div> -->
 
 <style>
-
 	#mainContainer {
 		display: flex;
 		flex-direction: column;
@@ -47,5 +37,6 @@
 		align-items: center;
 		text-align: center;
 		gap: 0.5rem;
+		height: 100%;
 	}
 </style>
