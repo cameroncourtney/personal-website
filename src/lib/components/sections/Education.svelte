@@ -26,13 +26,13 @@
 			</div>
 			<div id="courses">
 				<p class="text-3xl">Relevant Coursework</p>
-				<div class="flex flex-row justify-center w-full">
+				<div class="flex flex-row justify-center w-full text-left">
 					<Accordion>
 						<AccordionItem>
 							<svelte:fragment slot="summary">CS 312: Intro to Programming</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Fundamental programming concepts (in Java), basic data structures,
+									Fundamental programming concepts (in Java), basic data structures,
 									reasoning and debugging of programming behavior
 								</p>
 							</svelte:fragment>
@@ -41,7 +41,7 @@
 							<svelte:fragment slot="summary">CS 314: Data Structures</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Unit Testing, building and using data stuctures, Algorithm
+									Unit Testing, building and using data stuctures, Algorithm
 									Analysis
 								</p>
 							</svelte:fragment>
@@ -50,7 +50,7 @@
 							<svelte:fragment slot="summary">CS 311: Discrete Mathematics</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Logical Notation, Mathematical Induction, Graph Theory,
+									Logical Notation, Mathematical Induction, Graph Theory,
 									Recurrences, Set Theory, and Programming Correctness
 								</p>
 							</svelte:fragment>
@@ -61,7 +61,7 @@
 							>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Programming in C, representing data and programs at a low level of
+									Programming in C, representing data and programs at a low level of
 									abstraction, Memory Management, Storage Architecture, Processor Architecture
 								</p>
 							</svelte:fragment>
@@ -70,7 +70,7 @@
 							<svelte:fragment slot="summary">CS 439: Operating Systems</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Multi-Threading, Virtual Memory, File Systems, Networking,
+									Multi-Threading, Virtual Memory, File Systems, Networking,
 									Parallel and Distributed Computing
 								</p>
 							</svelte:fragment>
@@ -79,7 +79,7 @@
 							<svelte:fragment slot="summary">CS 331: Algorithms and Complexity</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Multi-Threading, Virtual Memory, File Systems, Networking,
+									Multi-Threading, Virtual Memory, File Systems, Networking,
 									Parallel and Distributed Computing
 								</p>
 							</svelte:fragment>
@@ -90,7 +90,7 @@
 							<svelte:fragment slot="summary">CS 371P: Object Oriented Programming</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Basic OOP Principles (Inheritance, Polymorphism, etc.),
+									Basic OOP Principles (Inheritance, Polymorphism, etc.),
 									Programming in C++, Writing Unit Tests
 								</p>
 							</svelte:fragment>
@@ -99,7 +99,7 @@
 							<svelte:fragment slot="summary">CS 363D: Intro to Data Mining</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Cleaning Data, Feature Engineering, Classification Models
+									Cleaning Data, Feature Engineering, Classification Models
 									(Decision Trees, K-Nearest Neighbors, Naive Byes, SVMs, Neural Networks),
 									Clustering Algorithms, Association Analyis, Basic Data Science Tools and Libraries
 									(Jupyter Notebooks, pandas, scikit-learn, etc.)
@@ -110,7 +110,7 @@
 							<svelte:fragment slot="summary">CS 343: Artificial Intelligence</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Introduction to AI, Probabilistic Reasoning, Machine Learning,
+									Introduction to AI, Probabilistic Reasoning, Machine Learning,
 									Reinforcement Learning, Bayes Nets, Constraint Satisfaction Problems
 								</p>
 							</svelte:fragment>
@@ -119,7 +119,7 @@
 							<svelte:fragment slot="summary">CS 378: Safe and Ethical AI</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Evaluating and mitigating the issues of fairness,
+									Evaluating and mitigating the issues of fairness,
 									security/privacy, and interpretability of ML Models through the use of various
 									statistical techniques
 								</p>
@@ -129,7 +129,7 @@
 							<svelte:fragment slot="summary">CS 371M: Mobile Computing</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: Mobile Application Development, Programming in Kotlin and Android
+									Mobile Application Development (Android), Kotlin, Android
 									Studios, HTTP/REST Principles
 								</p>
 							</svelte:fragment>
@@ -138,7 +138,7 @@
 							<svelte:fragment slot="summary">CS 347: Database Management</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Topics Covered: SQL, Relational Databases (PostgreSQL), Database Design and
+									SQL, Relational Databases (PostgreSQL), Database Design and
 									Normalizaion, NoSQL Databases (Graph Databases (Neo4j), Document Databases
 									(MongoDB), Column Databases, Key-Value Databases), Database Management
 								</p>
