@@ -20,7 +20,7 @@
 		gap: 1.25rem;
 	}
 
-    #github,
+	#github,
 	#email,
 	#linkedIn {
 		cursor: pointer;

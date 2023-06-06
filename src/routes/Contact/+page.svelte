@@ -3,4 +3,4 @@
 </script>
 
 <div>Contact</div>
-<Footer links={true}></Footer>
+<Footer links={true} />

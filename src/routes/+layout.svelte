@@ -9,31 +9,24 @@
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Header from '../lib/components/Header.svelte';
+	import Footer from '../lib/components/Footer.svelte';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
-
 
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
-			
-			
-	function sectionScroll(section: string) {
-		const ref = document.getElementById(section);
-		console.log(ref);
-		ref?.scrollIntoView({ behavior: 'smooth' });
-	}
 </script>
 
 <!-- Main wrapper component around application -->
 <AppShell class="scroll-smooth" slotFooter="bg-black p-4">
 	<!-- Header Contents -->
 	<svelte:fragment slot="header">
-		<Header/>
+		<Header />
 	</svelte:fragment>
-	<slot/>
+	<slot />
 	<!-- <a href="../CameronCourtneyResume.pdf" target="_blank" class="pdf-button">
 		Open PDF
 	</a> -->
 </AppShell>
-<style>
 
+<style>
 </style>
