@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Footer from '../Footer.svelte';
 	import LonghornGif from '../LonghornGif.svelte';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 </script>
@@ -153,8 +152,6 @@
 
 <style>
 	#aboutSection {
-		/* Height is viewport minus height of the header and footer. 
-		Header is 56px, footer is 104px. */
 		height: 100%;
 		width: 100%;
 		display: flex;

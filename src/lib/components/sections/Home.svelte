@@ -47,9 +47,4 @@
 		justify-content: center;
 		align-items: center;
 	}
-
-	#footer {
-		position: absolute;
-		bottom: 0;
-	}
 </style>
