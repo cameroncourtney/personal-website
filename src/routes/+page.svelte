@@ -5,6 +5,9 @@
 
 <div id="mainContainer" class="overflow-y-auto scroll-smooth">
 	<Home />
+	<div id="footerWrapper">
+		<Footer links={false} />
+	</div>
 </div>
 
 <!-- <Footer /> -->
@@ -37,5 +40,10 @@
 		text-align: center;
 		gap: 0.5rem;
 		height: 100%;
+	}
+
+	#footerWrapper {
+		position: absolute;
+		bottom: 0;
 	}
 </style>

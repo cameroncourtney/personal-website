@@ -5,11 +5,11 @@
 	const popupClick: PopupSettings = {
 		event: 'click',
 		target: 'popupClick',
-		placement: 'top'
+		placement: 'bottom'
 	};
 </script>
 
-<span class="longhorn text-lg object-contain">
+<span class="longhorn text-lg object-contain text-center">
 	<span class="[&>*]:pointer-events-none" use:popup={popupClick}>
 		<span class="text-3xl">University of Texas at Austin</span>
 		<span class="text-lg w-3/5">

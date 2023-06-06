@@ -17,7 +17,6 @@
 		</div>
 	</section>
 </div>
-<Footer links={false} />
 
 <style>
 	#intro {
