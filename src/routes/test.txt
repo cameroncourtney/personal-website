@@ -1,3 +1,12 @@
+<!-- Main wrapper component around application
+<AppShell class="scroll-smooth" slotFooter="bg-black p-4">
+	<!-- Header Contents -->
+	<svelte:fragment slot="header">
+		<Header />
+	</svelte:fragment>
+	<slot />
+</AppShell>
+
 <script lang="ts">
 	// The ordering of these imports is critical to your app working properly
 	// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
@@ -9,26 +18,32 @@
 	import '../app.postcss';
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import Header from '../lib/components/Header.svelte';
+	import Education from '../lib/components/sections/Education.svelte';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 
 	import { storePopup } from '@skeletonlabs/skeleton';
-	import Education from '$lib/components/sections/Education.svelte';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
 
 <!-- Main wrapper component around application -->
-	<Header></Header>
-	<div id="helo">
-		<slot/>
+	<!-- Header Contents -->
+	<Header />
+	<!-- <slot class="m-4" /> -->
+	<div id="ed" class="w-full">
+		<div id="testing">
+			hello
+		</div>
 	</div>
 
 <style>
-	#helo {
-		display: flex;
-		margin: 1.5rem;
-		width: 100%;
-		box-sizing: border-box;
+	#ed {
+		/* display: flex; */
+		background-color: red;
 	}
 
-</style>
+	#testing {
+		width: 100%;
+		background-color: blue;
+	}
+</style> -->
 

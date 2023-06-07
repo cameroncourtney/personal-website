@@ -21,7 +21,6 @@
 	#intro {
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
@@ -42,7 +41,7 @@
 		width: 100%;
 		box-sizing: border-box;
 		display: flex;
-		flex-flow: column wrap;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}

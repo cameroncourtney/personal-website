@@ -14,11 +14,13 @@
 	#mainContainer {
 		display: flex;
 		flex-direction: column;
+		box-sizing: border-box;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		gap: 0.5rem;
 		height: 100%;
+		width: 100%;
 	}
 
 	#footerWrapper {

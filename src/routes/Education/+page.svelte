@@ -4,20 +4,21 @@
 </script>
 
 <div id="edPage">
-	<Education />
-	<div id="footerWrapper">
-		<Footer links={true} />
-	</div>
+	hello
 </div>
+<Education></Education>
 
 <style>
 	#edPage {
 		display: flex;
-		flex-direction: column;
+		background: green;
+		/* flex-direction: column; */
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		height: 100%;
+		width: 100%;
+		margin-right: 10rem;
 	}
 
 	#footerWrapper {

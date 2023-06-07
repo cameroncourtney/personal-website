@@ -3,16 +3,14 @@
 </script>
 
 <div id="expSection">
-	<div id="expCard" class="card p-8">
+	<div id="expCard" class="card pl-20 pr-20 pt-8 pb-8">
 		<div id="cardHeader">
 			<div class="text-5xl">Experience</div>
 			<hr id="divider" class="!border-t-4" />
 		</div>
 		<div id="cardContent" class="text-xl">
 			<div>
-				<p class="text-3xl">
-					<a href="https://en.wikipedia.org/wiki/H-E-B"> H-E-B </a>
-				</p>
+				<a class="text-3xl" href="https://en.wikipedia.org/wiki/H-E-B"> H-E-B </a>
 				<hr id="divider" class="!border-t-4" />
 			</div>
 			<div id="list">
@@ -100,7 +98,6 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		flex-wrap: wrap;
 	}
 
 	#expCard {
@@ -109,10 +106,8 @@
 		justify-content: flex-start;
 		align-items: center;
 		gap: 2rem;
-		padding: 2rem;
 		overflow: auto;
 		margin: 1.5rem;
-		width: 80%;
 	}
 
 	#list {
