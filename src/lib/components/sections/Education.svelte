@@ -31,8 +31,8 @@
 							<svelte:fragment slot="summary">CS 312: Intro to Programming</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Fundamental programming concepts (in Java), basic data structures,
-									reasoning and debugging of programming behavior
+									Fundamental programming concepts (in Java), basic data structures, reasoning and
+									debugging of programming behavior
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -40,8 +40,7 @@
 							<svelte:fragment slot="summary">CS 314: Data Structures</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Unit Testing, building and using data stuctures, Algorithm
-									Analysis
+									Unit Testing, building and using data stuctures, Algorithm Analysis
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -49,8 +48,8 @@
 							<svelte:fragment slot="summary">CS 311: Discrete Mathematics</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Logical Notation, Mathematical Induction, Graph Theory,
-									Recurrences, Set Theory, and Programming Correctness
+									Logical Notation, Mathematical Induction, Graph Theory, Recurrences, Set Theory,
+									and Programming Correctness
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -60,8 +59,8 @@
 							>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Programming in C, representing data and programs at a low level of
-									abstraction, Memory Management, Storage Architecture, Processor Architecture
+									Programming in C, representing data and programs at a low level of abstraction,
+									Memory Management, Storage Architecture, Processor Architecture
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -69,8 +68,8 @@
 							<svelte:fragment slot="summary">CS 439: Operating Systems</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Multi-Threading, Virtual Memory, File Systems, Networking,
-									Parallel and Distributed Computing
+									Multi-Threading, Virtual Memory, File Systems, Networking, Parallel and
+									Distributed Computing
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -78,8 +77,8 @@
 							<svelte:fragment slot="summary">CS 331: Algorithms and Complexity</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Multi-Threading, Virtual Memory, File Systems, Networking,
-									Parallel and Distributed Computing
+									Multi-Threading, Virtual Memory, File Systems, Networking, Parallel and
+									Distributed Computing
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -89,8 +88,8 @@
 							<svelte:fragment slot="summary">CS 371P: Object Oriented Programming</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Basic OOP Principles (Inheritance, Polymorphism, etc.),
-									Programming in C++, Writing Unit Tests
+									Basic OOP Principles (Inheritance, Polymorphism, etc.), Programming in C++,
+									Writing Unit Tests
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -98,10 +97,10 @@
 							<svelte:fragment slot="summary">CS 363D: Intro to Data Mining</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Cleaning Data, Feature Engineering, Classification Models
-									(Decision Trees, K-Nearest Neighbors, Naive Byes, SVMs, Neural Networks),
-									Clustering Algorithms, Association Analyis, Basic Data Science Tools and Libraries
-									(Jupyter Notebooks, pandas, scikit-learn, etc.)
+									Cleaning Data, Feature Engineering, Classification Models (Decision Trees,
+									K-Nearest Neighbors, Naive Byes, SVMs, Neural Networks), Clustering Algorithms,
+									Association Analyis, Basic Data Science Tools and Libraries (Jupyter Notebooks,
+									pandas, scikit-learn, etc.)
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -109,8 +108,8 @@
 							<svelte:fragment slot="summary">CS 343: Artificial Intelligence</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Introduction to AI, Probabilistic Reasoning, Machine Learning,
-									Reinforcement Learning, Bayes Nets, Constraint Satisfaction Problems
+									Introduction to AI, Probabilistic Reasoning, Machine Learning, Reinforcement
+									Learning, Bayes Nets, Constraint Satisfaction Problems
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -118,9 +117,8 @@
 							<svelte:fragment slot="summary">CS 378: Safe and Ethical AI</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Evaluating and mitigating the issues of fairness,
-									security/privacy, and interpretability of ML Models through the use of various
-									statistical techniques
+									Evaluating and mitigating the issues of fairness, security/privacy, and
+									interpretability of ML Models through the use of various statistical techniques
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -128,8 +126,8 @@
 							<svelte:fragment slot="summary">CS 371M: Mobile Computing</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									Mobile Application Development (Android), Kotlin, Android
-									Studios, HTTP/REST Principles
+									Mobile Application Development (Android), Kotlin, Android Studios, HTTP/REST
+									Principles
 								</p>
 							</svelte:fragment>
 						</AccordionItem>
@@ -137,9 +135,9 @@
 							<svelte:fragment slot="summary">CS 347: Database Management</svelte:fragment>
 							<svelte:fragment slot="content">
 								<p class="text-sm">
-									SQL, Relational Databases (PostgreSQL), Database Design and
-									Normalizaion, NoSQL Databases (Graph Databases (Neo4j), Document Databases
-									(MongoDB), Column Databases, Key-Value Databases), Database Management
+									SQL, Relational Databases (PostgreSQL), Database Design and Normalizaion, NoSQL
+									Databases (Graph Databases (Neo4j), Document Databases (MongoDB), Column
+									Databases, Key-Value Databases), Database Management
 								</p>
 							</svelte:fragment>
 						</AccordionItem>

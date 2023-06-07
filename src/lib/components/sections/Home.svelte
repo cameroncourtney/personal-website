@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Links from '$lib/components/Links.svelte';
-	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div id="homeSection">
